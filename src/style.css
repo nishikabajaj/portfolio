@@ -1,7 +1,15 @@
 
 * {
-    font-family: 'Poppins';
+    font-family: 'Poppins', Calibri, sans-serif;
     cursor: crosshair;    
+}
+
+@font-face {
+    font-family: "Nishika";
+    src: url('/assets/Nishika-Regular.ttf') format('truetype'),
+         url('/assets/Nishika-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -61,7 +69,6 @@ header {
     background-position: center top, center 6px, center 6px;
 
 }
-
 
 .contact-links {
     display: flex;
@@ -160,6 +167,8 @@ li.active .title::after {
     z-index: 3;
 }
 
+
+
 .hero h1 {
     font-size: 40px;
 }
@@ -203,6 +212,7 @@ li.active .title::after {
     padding-top: 80px;
     justify-content: center;
 }
+
 .headshot {
     height: fit-content;
     text-align: right;
@@ -218,6 +228,7 @@ li.active .title::after {
 .about-info {
     width: 50%;
 }
+
 
 .single-contact{
     display: flex;
