@@ -309,8 +309,8 @@ li.active .title::after {
 .card-icon-box {
     border: 1px solid black;
     height: fit-content;
-    width: 60%;
-    padding: 5px;
+    width: 100%;
+    padding: 8px;
     background-color: rgb(236, 219, 150);
     border-radius: 10px;
     display: flex;
@@ -325,6 +325,7 @@ li.active .title::after {
     font-weight: 600;
     margin: 5px;
 }
+
 
 .card-icon-box:hover {
     cursor: pointer;
@@ -442,8 +443,6 @@ footer{
     transform: translateY(90px);
 }
 
-
-/* Hamburger menu
 .hamburger {
     display: none;
     cursor: pointer;
@@ -453,12 +452,4 @@ footer{
     z-index: 1001;
 } 
 
-/* .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: #333;
-    transition: all 0.3s ease;
-}
- */
+
