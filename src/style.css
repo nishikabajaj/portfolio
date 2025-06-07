@@ -13,7 +13,7 @@
 }
 
 body {
-  --dot-bg: rgb(242, 242, 242);
+  --dot-bg: rgb(248, 248, 248);
   --dot-color: #ababab;
   --dot-size: 1.3px;
   --dot-space: 22px;
@@ -35,10 +35,10 @@ header {
     z-index: 1;
 }
 
-/* div {
+div, ul {
     border: 1px solid red;
 }
- */
+
 .page-header{
     display: flex;
     justify-content: space-between;
@@ -72,17 +72,26 @@ header {
 
 .contact-links {
     display: flex;
-    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     width: fit-content;
-    padding-top: 30px;
-    padding-left: 15px;
+    height: fit-content;
+    margin: 0;
+    padding: 2.75rem 1rem 1rem 0;
     gap: 1rem;
+
+}
+
+.contact-links .single-contact a {
+    cursor: pointer;
+    padding: 0px;
 }
 
 .contact-links img {
-    cursor: pointer;
+    pointer-events: none;
+    margin: 0;
     height: 25px;
-    width: fit-content;
 }
 
 .top-nav {
@@ -99,7 +108,32 @@ header {
 
 #navList li {
     display: flex;
+    align-items: center;
     margin: 0;
+}
+
+#navList li a {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #0b526c;
+    color: white;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color:#6ea3b7;
+    transition: 0.2s;
 }
 
 .checkbox {
@@ -128,13 +162,13 @@ li.active .path1 {
     opacity: 1;
 }
 
-.title {
+/* .title {
     position: relative;
     transition: color 0.3s ease;
     font-size: 14px;
-}
+} */
 
-.title::after {
+/* .title::after {
     content: '';
     position: absolute;
     height: 2px;
@@ -145,10 +179,14 @@ li.active .path1 {
     transform: translateY(-50%);
     transition: width 0.3s ease;
 }
-
-li:hover .title::after,
+ */
+/* li:hover .title::after,
 li.active .title::after {
     width: 100%;
+} */
+
+li:hover {
+    text-decoration: underline;
 }
 
 .main-container{
@@ -161,7 +199,7 @@ li.active .title::after {
 
 .hero{
     justify-self: center;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     width: 50%;
     text-align: center;
     z-index: 3;
@@ -186,16 +224,16 @@ li.active .title::after {
 
 .hero a:hover{
     transition: 0.3s;
-    color:rgb(110, 163, 183)
+    color:#6ea3b7
 }
 
-.plane{
+/* .plane{
     pointer-events: none;
     width: 100%;
     margin: 0;
     padding: 0;
     height: 6rem;
-}
+} */
 
 .plane img{
     width: 100%;
@@ -248,7 +286,7 @@ li.active .title::after {
     text-decoration: none;
 }
 
-#email-icon, #linkedin, #resume{
+#email-icon, #linkedin, #resume, #github{
     width: 30px;
 }
 
@@ -430,17 +468,12 @@ footer{
     padding: 0;
 }
 
-.footer img {
-    width: 100%;
-}
-
 .footer p {
     padding: 7px;
     background-color: white;
     width: fit-content;
     border-radius: 10px;
     justify-self: center;
-    transform: translateY(90px);
 }
 
 .hamburger {
