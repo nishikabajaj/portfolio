@@ -290,7 +290,7 @@ li:hover {
 
 #headshot {
     margin-top: 3rem;
-    width: clamp(18rem, 40vw, 20rem);
+    width: clamp(18rem, 40vw, 28rem);
 }
 
 .about-info {
@@ -303,7 +303,7 @@ li:hover {
 
 .about-info p {
     width: 80%;
-    font-size: clamp(1rem, 0.9vw, 3rem);
+    font-size: clamp(1rem, 0.9vw, 2rem);
 }
 
 .single-contact{
