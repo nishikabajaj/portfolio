@@ -233,6 +233,7 @@ li:hover {
     flex-direction: column;
     justify-content: center;
     justify-self: center;
+    padding-top: 2vh;
     width: 60vw;
     height: fit-content;
     text-align: center;
@@ -358,7 +359,7 @@ li:hover {
 
 .card {
     margin: 5px;
-    width: clamp(17rem, 36vw, 20rem);
+    width: clamp(17rem, 20vw, 22rem);
     height: fit-content;
     background: white;
     border-radius: 30px;
