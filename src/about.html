@@ -24,8 +24,86 @@
     <a id="section2" class="page-section"> </a>
     <header>
         <nav class="page-header"> 
-            <div class="personal-logo">
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
 
+            <!-- Mobile Menu Overlay -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-header">
+                    <button class="close-btn" id="closeBtn">&times;</button>
+                </div>
+                
+                <ul class="mobile-nav" id="mobileNavList">
+                    <li>
+                    <a href="index.html#section1">
+                    <span class="checkbox">
+                        <svg viewbox="0 0 95 95">
+                            <g transform="translate(0,-952.36222)">
+                                <path d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4" stroke="black" stroke-width="3" fill="none" class="path1" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="title">Home</span>
+                    </a>
+                </li>
+
+                <li data-target="section2">
+                    <span class="checkbox">
+                        <svg viewbox="0 0 95 95">
+                            <g transform="translate(0,-952.36222)">
+                                <path d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4" stroke="black" stroke-width="3" fill="none" class="path1" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="title">About</span>
+                </li>
+
+                <li>
+                <a href="index.html#section3">
+                    <span class="checkbox">
+                        <svg viewbox="0 0 95 95">
+                            <g transform="translate(0,-952.36222)">
+                                <path d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4" stroke="black" stroke-width="3" fill="none" class="path1" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="title">Development</span>
+                </a>
+                </li>
+
+
+                <li>
+                    <a href="index.html#section4">
+                        <span class="checkbox">
+                            <svg viewbox="0 0 95 95">
+                                <g transform="translate(0,-952.36222)">
+                                    <path d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4" stroke="black" stroke-width="3" fill="none" class="path1" />
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="title">Design</span>
+                    </a>
+                </li>
+                </ul>
+
+                <div class="mobile-contact-links">
+                    <div class="single-contact"> 
+                        <a target="_blank" href="mailto:nishikabajaj7@gmail.com"> <img src="../assets/mail.png"> </a>
+                    </div>
+                    <div class="single-contact"> 
+                        <a target="_blank" href="https://www.linkedin.com/in/nishika-bajaj"> <img src="../assets/Linkedin.png"> </a>
+                    </div>
+                    <div class="single-contact"> 
+                        <a target="_blank" href="https://drive.google.com/file/d/1hseQedPBmS8cB_eLyCkjN7u9Yr8HuXJD/view?usp=sharing"> <button> Resume </button> </a>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="personal-logo">
+                <a href="index.html#section1"> <img src="../assets/personal-logo.png"> </a> 
             </div>
 
             <ul class="top-nav" id="navList">
@@ -108,12 +186,6 @@
             
         </nav>
     </header>
-
-    <div class="hamburger" id="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
 
 
     <div class="about-me">
