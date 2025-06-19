@@ -496,6 +496,19 @@ li:hover {
     height: clamp(70px, 6.4vh, 120px);
 }
 
+
+/* WIP Styling*/
+.wip-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+
+
 footer{
     margin: 0;
     padding: 0;
